@@ -24,7 +24,7 @@
         </tr>
         {% for sighting in sightings %}
         <tr>
-          <td><a href=" ">{{ sighting.squirrel_id }}</a ></td>
+          <td><a href="/sightings/{{ sighting.squirrel_id }}/" >{{ sighting.squirrel_id }}</a></td>
           <td> {{ sighting.longitude }} </td>
           <td> {{ sighting.latitude }} </td>
           <td> {{ sighting.shift }} </td>

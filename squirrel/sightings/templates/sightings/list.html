@@ -11,7 +11,7 @@
   <body>
     <h1 class="display-4"> Sightings </h1>
     <table class="table table-bordered">
-    <a href=" "sighting_add" %}" class="btn btn-success">add a new sighting</a>
+    <a href="{% url "sighting_add" %}" class="btn btn-success">add a new sighting</a>
     <a href="{% url "sighting_stats" %}" class="btn btn-success">Click to see the stats</a>
       <thead class="thead-dark">
         <tr>
@@ -24,7 +24,7 @@
         </tr>
         {% for sighting in sightings %}
         <tr>
-          <td><a href=" " >{{ sighting.squirrel_id }}</a ></td>
+          <td><a href=" ">{{ sighting.squirrel_id }}</a ></td>
           <td> {{ sighting.longitude }} </td>
           <td> {{ sighting.latitude }} </td>
           <td> {{ sighting.shift }} </td>
